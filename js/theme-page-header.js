@@ -7,7 +7,7 @@ define(function(require) {
 
 		initialize: function() {
 			this.setStyles();
-			this.listenTo(Adapt, 'device:resize', this.setStyles);
+			this.listenTo(Adapt, 'device:resize device:changed', this.setStyles);
 			this.listenTo(Adapt, 'remove', this.remove);
 		},
 
